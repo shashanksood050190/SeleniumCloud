@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Hub spot Test automation regression suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="5" parallel="tests" name="Login Page test - Chrome(failed)" verbose="3">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mytests.SauceTest">
+        <methods>
+          <include name="checkInventoryItemTest"/>
+          <include name="tearDown"/>
+          <include name="checkAddToCartButtonTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mytests.SauceTest -->
+    </classes>
+  </test> <!-- Login Page test - Chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="Login Page test - FF(failed)" verbose="3">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.mytests.SauceTest">
+        <methods>
+          <include name="checkInventoryItemTest"/>
+          <include name="tearDown"/>
+          <include name="checkAddToCartButtonTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mytests.SauceTest -->
+    </classes>
+  </test> <!-- Login Page test - FF(failed) -->
+</suite> <!-- Failed suite [Hub spot Test automation regression suite] -->
